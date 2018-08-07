@@ -137,6 +137,7 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
     <Content Include="css\Aboutus.css" />
+    <Content Include="css\Admin\index.css" />
     <Content Include="css\contactus.css" />
     <Content Include="css\gallery-grid.css" />
     <Content Include="css\Gallery.css" />
@@ -253,6 +254,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AdminController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\loginController.cs" />
     <Compile Include="Entity\education.Context.cs">
@@ -292,6 +294,7 @@
     <Content Include="Views\Home\Contactus.cshtml" />
     <Content Include="Views\login\Index.cshtml" />
     <Content Include="Views\login\login.cshtml" />
+    <Content Include="Views\Admin\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

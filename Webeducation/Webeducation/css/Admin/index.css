@@ -1,0 +1,41 @@
+﻿body {
+    color: #fff;
+    background-image: url('../../images/bible-book-book-bindings-1112048.jpg');
+    background-size:cover;
+}
+ .sec-common label{
+            margin:15px;
+            width:140px;
+        }
+        .sec-common input{
+            margin:0px 15px;
+            width:200px;
+            background-color:transparent;
+        }
+        h3{
+            text-align:center;
+            margin-bottom:20px;
+        }
+        .sec_stud option{
+            color:black;
+        }
+        .sec_stud{
+            margin-left:15px;
+            background-color:transparent;
+        }
+        .sec-rcommon input{
+            margin:15px;
+        }
+        .sec-foot input{
+            margin:15px;
+            background-color:#000;
+        }
+h3::after {
+    content: "";
+    display: block;
+    width: 60px;
+    max-width: 70%;
+    border-bottom: 0.2em solid #ff6a00;
+    margin: 5px auto 0;
+}
+
