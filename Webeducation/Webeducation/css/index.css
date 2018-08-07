@@ -1,0 +1,153 @@
+﻿ .bcolor{
+     position:absolute;
+     top:200px;
+     left:-500px;
+ }
+  .bcolor a{
+    border: solid 1px #f73b11;
+    background-color: #f73b11;
+}
+  .features-content {
+    position: relative;
+    z-index: 50;
+    background: #61ba6d;
+    background: -webkit-linear-gradient(to right, #f73b11, #f99b43);
+    background: linear-gradient(to right, #f73b11, #f99b43);
+    padding: 40px 15px;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+  .single-top-features i {
+    font-size: 40px;
+    margin-right: 15px;
+    color: #ffffff;
+}
+.single-top-features h5 {
+    font-size: 18px;
+    margin-bottom: 0;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.course-icon {
+    font-size: -webkit-xxx-large;
+    margin-right: 17px;
+    margin-left: 10px;
+}
+.sec_mar{
+    margin-top:60px;
+}
+.course-content h4 {
+    margin-bottom: 15px;
+}
+.course-content p {
+    margin-bottom: 0;
+}
+.single-course-area:hover .course-content h4, .single-course-area:focus .course-content h4 {
+    color: #f73b11;
+}
+.single-course-area:hover{
+    box-shadow: 2px 2px 19px #f73b11;
+    cursor: pointer;
+    
+}
+.ser-agile {
+    margin-top: 100px;
+    background: url('../images/open-book-1428428_1920.jpg') no-repeat 0px 0px;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    padding: 5em 0;
+}
+.wthree_head_section {
+    margin-bottom: 5em;
+    color:#fff;
+}
+.grid1 {
+   background: linear-gradient(to right, #f73b11, #f99b43);
+    padding: 4em 4em;
+    transition: 0.5s all;
+    text-align: center;
+}
+.w3l-info h5 {
+    font-style: italic;
+    color: #0e0e0e;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+.w3l-info h4 {
+    color: #fff;
+    font-size: 20px;
+    line-height: 1.8em;
+    letter-spacing: 1px;
+    margin: .5em 0;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.w3l-info h6 {
+    font-style: italic;
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.ser-lef-agile{
+    margin-bottom:30px;
+}
+/*@media screen and (max-width: 480px) {
+    .features-content {
+       
+        position: relative;
+         top:0px;
+    z-index: 50;
+    background: #61ba6d;
+    background: -webkit-linear-gradient(to right, #f73b11, #f99b43);
+    background: linear-gradient(to right, #f73b11, #f99b43);
+    padding: 40px 15px;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    }
+}*/
+
+@media screen and (max-width: 430px) {
+    .features-content {
+        position: relative;
+        top: 95px;
+        z-index: 50;
+        background: #61ba6d;
+        background: -webkit-linear-gradient(to right, #f73b11, #f99b43);
+        background: linear-gradient(to right, #f73b11, #f99b43);
+        padding: 40px 15px;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+
+    .carousel {
+        position: relative;
+        top: 10px;
+    }
+
+    .bcolor {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+    }
+    .bcolor h3{
+        font-size:15px;
+        padding-bottom:0px;
+        margin-bottom:5px;
+    }
+    .bcolor h1{
+        font-size:20px;
+        margin-top:5px;
+        margin-bottom:5px;
+    }
+   .bcolor .btn {
+        padding:0px;
+    font-size: 10px;
+    color: #fff;
+    border-radius: 0px;
+}
+}

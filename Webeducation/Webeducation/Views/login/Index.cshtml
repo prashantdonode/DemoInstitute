@@ -1,0 +1,79 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="~/css/login/index.css" rel="stylesheet" />
+   
+</head>
+<body>
+    <div class="wthree-dot">
+        <h1>Signup Form</h1>
+        <div class="profile">
+            <div class="wrap">
+                <div class="wthree-grids">
+                    <div class="content-main">
+                        <div class="w3ls-subscribe">
+                            <h4>New Customer?</h4>
+                            <form action="#" method="post">
+                                <input name="Search" placeholder="First Name" required="" type="text" id="first_name">
+                                <input name="Search" placeholder="Last Name" required="" type="text" id="last_name">
+                                <input name="Search" placeholder="Email" required="" type="email" id="email_id">
+                                <input name="Password" placeholder="Password" required="" type="password" id="password">
+                                <input name="Password" placeholder="Confirm Password" required="" type="password" id="confirm_password">
+                                <input value="Sign Up" type="submit" onclick="mySave()">
+                            </form>
+                        </div>
+                    </div>
+                    <div class="clear"> </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+    $(document).ready(function () {
+
+
+
+    });
+
+    function mySave()
+    {
+        var txtusername = $("#first_name").val();
+        var txtlastname = $("#last_name").val();
+        var txtemailid = $("#email_id").val();
+        var txtpassword = $("#password").val();
+        var txtconfirmpassword = $("#confirm_password").val();
+        alert("first_name=" + txtusername);
+        alert("last_name=" + txtlastname);
+        $.ajax({
+            type: "POST",
+            url: "/login/SetRegistration",
+            data: '{first_name: "' + txtusername + '",last_name:"' + txtlastname + '",email_id:"' + txtemailid + '",password:"' + txtpassword + '",confirm_password:"' + txtconfirmpassword + '"}',
+            contentType: "application/json; charset=utf-8",
+            dataType: "json",
+            success: function (data) {
+                if (data.state) {
+                    alert(' Add Successfully ');
+                    window.location.reload();
+                } else {
+                    alert(' information is Wrong');
+                }
+            }
+        });
+
+
+    }
+    </script>
+</body>
+</html>

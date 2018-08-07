@@ -1,0 +1,189 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <script src="~/Scripts/modernizr-2.6.2.js"></script>
+   
+    <script src="~/js/layout.js"></script>
+    <link href="~/css/layout.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .navbar-collapse {
+            flex-grow: 0;
+        }
+        li.nav-item {
+    margin-right: 20px;
+}
+        li.nav-item {
+    margin-left: 15px;
+}
+         .academy-logo a{
+     color:#f73b11;
+     font-size:30px;
+ }
+
+.academy-logo a:hover , .login-content a:hover{
+    color:#000 ;
+    text-decoration: none;
+}
+
+.login-content a{
+      color:#f73b11;
+     font-size:20px;
+}
+.nav-link a:active{
+    color:#f73b11;
+}
+        .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link {
+            color: #f73b11;
+        }
+
+
+
+.navbar-light .navbar-nav .nav-link:hover {
+   color:#f73b11;
+}
+  
+
+
+
+    </style>
+</head>
+<body>
+    <header class="header-area">
+        <div class="top-header">
+            <div class="container h-100">
+                <div class="row h-100">
+                    <div class="col-12 h-100">
+                        <div class="header-content h-100 d-flex align-items-center justify-content-between">
+                            <div class="academy-logo">
+                                <a href="index.html"><img src="img/core-img/logo.png" alt="">Education</a>
+                            </div>
+                            <div class="login-content">
+                                <a href="#">Register / Login</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+         <nav class="navbar  navbar-expand-lg navbar-light top-navbar" data-toggle="sticky-onscroll">
+             <div class="calling1-info" id="calling-info">
+                 <div class="call-center1">
+                 </div>
+             </div>
+            <div class="container">
+
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav ">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="~/Home/Index">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="~/Home/Aboutus">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="~/Home/Services">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="~/Home/Gallery">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="~/Home/Contactus">Contact</a>
+                        </li>
+                    </ul>
+
+                </div>
+             
+                <div class="calling-info" id="calling-info">
+                    <div class="call-center">
+                        <a href="tel:+654563325568889"><i class="icon-telephone-2"></i> <span>(+65) 456 332 5568 889</span></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        
+        </div>
+    </header>
+
+
+
+     <div class="body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year -SkyvisionItsolutions</p>
+        </footer>
+    </div>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"></button>
+
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="~/js/scroll.js"></script>
+    <script>
+        $(document).ready(function () {
+            // Custom function which toggles between sticky class (is-sticky)
+            var stickyToggle = function (sticky, stickyWrapper, scrollElement) {
+                var stickyHeight = sticky.outerHeight();
+                var stickyTop = stickyWrapper.offset().top;
+                if (scrollElement.scrollTop() >= stickyTop) {
+                    stickyWrapper.height(stickyHeight);
+                    sticky.addClass("is-sticky");
+                }
+                else {
+                    sticky.removeClass("is-sticky");
+                    stickyWrapper.height('auto');
+                }
+            };
+
+            // Find all data-toggle="sticky-onscroll" elements
+            $('[data-toggle="sticky-onscroll"]').each(function () {
+                var sticky = $(this);
+                var stickyWrapper = $('<div>').addClass('sticky-wrapper'); // insert hidden element to maintain actual top offset on page
+                sticky.before(stickyWrapper);
+                sticky.addClass('sticky');
+
+                // Scroll & resize events
+                $(window).on('scroll.sticky-onscroll resize.sticky-onscroll', function () {
+                    stickyToggle(sticky, stickyWrapper, $(this));
+                });
+
+                // On page load
+                stickyToggle(sticky, stickyWrapper, $(window));
+            });
+        });
+
+
+
+
+
+       
+    </script>
+    <script >
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("myBtn").style.display = "block";
+            } else {
+                document.getElementById("myBtn").style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,58 @@
+﻿body {
+    background-image: url('../../images/bible-book-book-bindings-1112048.jpg');
+    background-size:cover;
+}
+.wrap {
+    width: 60%;
+    margin: 2em auto 0;
+}
+
+.content-main {
+    margin-left: 115px;
+    float: left;
+    width: 70%;
+}
+.wthree-dot h1{
+    text-align:center;
+    color:#fff;
+}
+.w3ls-subscribe {
+    background: rgba(0, 0, 0, 0.56);
+    padding: 3em;
+    min-height: 426px;
+}
+.w3ls-subscribe h4 {
+    color: #FFFFFF;
+    font-size: 1em;
+    margin: 0 0 1em 0;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+.w3ls-subscribe input[type="email"], .w3ls-subscribe input[type="text"], .w3ls-subscribe input[type="password"] {
+    outline: none;
+    padding: 1em;
+    background: none;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    font-size: .9em;
+    margin: 0 0 1.5em 0;
+    width: 93%;
+}
+.w3ls-subscribe input[type="submit"] {
+    color: #ffffff;
+    font-size: .9em;
+    text-decoration: none;
+    padding: 1em 2em;
+    cursor: pointer;
+    background: #F44336;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: center;
+    border: solid 1px #f44336;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+}

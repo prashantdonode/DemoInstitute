@@ -1,0 +1,164 @@
+﻿
+@{
+    ViewBag.Title = "Gallery";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<link href="~/css/Gallery.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
+<link href="~/css/gallery-grid.css" rel="stylesheet" />
+<style>
+    .tz-gallery{
+        margin-top:70px;
+    }
+    .agile_gallery_grid:hover .w3layouts_gallery_grid1_pos {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    -moz-transform: scaleX(1);
+    -o-transform: scaleX(1);
+    -ms-transform: scaleX(1);
+}
+.w3layouts_gallery_grid1_pos {
+    background: rgba(0, 0, 0, 0.73);
+    bottom: 45px;
+    left: 45px;
+    opacity: 0;
+    padding: 1em;
+    position: absolute;
+    right: 45px;
+    text-align: center;
+    top: 45px;
+    visibility: hidden;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -ms-transform: scaleX(-1);
+    -webkit-transition: all 0.8s ease;
+    transition: all 0.8s ease;
+}
+.w3layouts_gallery_grid1_pos h3 {
+    font-size: 1.2em;
+    letter-spacing: 2px;
+    font-weight: 600;
+    margin: 1em 0 .5em;
+    padding-bottom: .5em;
+    position: relative;
+    text-transform: capitalize;
+    color: #ffffff;
+    font-family: 'Poiret One', cursive;
+}
+.w3layouts_gallery_grid1_pos p {
+    color: #00affe;
+    margin-top: 1.5em;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+ 
+</style>
+
+        <div class="breadcumb-area bg-img ">
+            <div class="bradcumbContent">
+                <h2>Gallery</h2>
+            </div>
+        </div>
+  
+
+
+<div class="container gallery-container">
+  
+    <div class="tz-gallery">
+        <div class="row">
+            <div class="col-sm-6 col-md-4 agile_gallery_grid">
+                <a class="lightbox" href="~/images/item1.png">
+                    <img src="~/images/item1.png" alt="Park">
+                    <div class="w3layouts_gallery_grid1_pos">
+                        <h3>Proficient</h3>
+                        <p>Business Growth</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-4 agile_gallery_grid">
+                <a class="lightbox" href="~/images/item2.png">
+                    <img src="~/images/item2.png" alt="Bridge">
+                    <div class="w3layouts_gallery_grid1_pos">
+                        <h3>Proficient</h3>
+                        <p>Business Growth</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-12 col-md-4 agile_gallery_grid">
+                <a class="lightbox" href="~/images/item3.png">
+                    <img src="~/images/item3.png" alt="Tunnel">
+                    <div class="w3layouts_gallery_grid1_pos">
+                        <h3>Proficient</h3>
+                        <p>Business Growth</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-4 agile_gallery_grid">
+                <a class="lightbox" href="~/images/item4.png">
+                    <img src="~/images/item4.png" alt="Coast">
+                    <div class="w3layouts_gallery_grid1_pos">
+                        <h3>Proficient</h3>
+                        <p>Business Growth</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-4 agile_gallery_grid">
+                <a class="lightbox" href="~/images/item5.png">
+                    <img src="~/images/item5.png" alt="Rails">
+                    <div class="w3layouts_gallery_grid1_pos">
+                        <h3>Proficient</h3>
+                        <p>Business Growth</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-4 agile_gallery_grid">
+                <a class="lightbox" href="~/images/item6.png">
+                    <img src="~/images/item6.png" alt="Traffic">
+                    <div class="w3layouts_gallery_grid1_pos">
+                        <h3>Proficient</h3>
+                        <p>Business Growth</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-4 agile_gallery_grid">
+                <a class="lightbox" href="~/images/item7.png">
+                    <img src="~/images/item7.png" alt="Rocks">
+                    <div class="w3layouts_gallery_grid1_pos">
+                        <h3>Proficient</h3>
+                        <p>Business Growth</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-4 agile_gallery_grid">
+                <a class="lightbox" href="~/images/item8.png">
+                    <img src="~/images/item8.png" alt="Benches">
+                    <div class="w3layouts_gallery_grid1_pos">
+                        <h3>Proficient</h3>
+                        <p>Business Growth</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-4 agile_gallery_grid">
+                <a class="lightbox" href="~/images/item10.png">
+                    <img src="~/images/item10.png" alt="Sky">
+                    <div class="w3layouts_gallery_grid1_pos">
+                        <h3>Proficient</h3>
+                        <p>Business Growth</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+<script>
+    baguetteBox.run('.tz-gallery');
+</script>

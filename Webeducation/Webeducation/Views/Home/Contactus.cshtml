@@ -1,0 +1,122 @@
+﻿
+@{
+    ViewBag.Title = "Contactus";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<style>
+    button, input, optgroup, select, textarea {
+        color: white;
+    }
+    .map-section {
+    padding: 1em 1em .7em;
+    background: #eee;
+    position: relative;
+    z-index: 2;
+    margin-top:100px;
+}
+    .map-section iframe {
+    border: none;
+    width: 100%;
+    height: 1012px;
+}
+    .contact-content {
+        background-image: url('../../images/headphones-690685_1920.jpg');
+        background-size:cover;
+        background-color: #eef3f6;
+        padding: 100px 50px;
+        position: relative;
+        z-index: 15;
+        top: -100px;
+        margin-bottom: -100px;
+        color:white;
+    }
+    .sec-p{
+        padding:0px;
+    }
+    
+</style>
+<link href="~/css/Gallery.css" rel="stylesheet" />
+<link href="~/css/contactus.css" rel="stylesheet" />
+
+
+        <div class="breadcumb-area bg-img ">
+            <div class="bradcumbContent">
+                <h2>ContactUs</h2>
+            </div>
+        </div>
+ 
+
+
+<div class="row">
+    <div class="col-md-6">
+        <section class="map-section">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d59546.84536541325!2d79.06987357910154!3d21.125406500000015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1531985816315"></iframe>
+        </section>
+    </div>
+    <div class="col-md-6 sec-c">
+        <section class="contact-area">
+                <div class="row">
+                    <div class="col-12 sec-p">
+                        <div class="contact-content">
+                            <div class="row">
+                                <div class="wthree_head_section">
+                                    <h2 class="w3l_header">ContactUs</h2>
+                                </div>
+                                <div class="contact-eql">
+                                    <div class="contact-left col-md-10">
+                                        <h4>About Us</h4>
+                                        <p class="para-w3-agileits">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tortor est, malesuada at nulla in.</p>
+                                        <h4 style="padding-top:30px;">Find Us</h4>
+                                        <address>
+                                            <div class="add-info">
+                                                <span class="fa fa-map-marker" aria-hidden="true"></span>
+                                                <p>1608 nagpur-19, nandanvan, India</p>
+                                            </div>
+                                            <div class="add-info">
+                                                <span class="fa fa-phone" aria-hidden="true"></span>
+                                                <p>+(012) 345 6789</p>
+                                            </div>
+                                            <div class="add-info">
+                                                <span class="fa fa-envelope" aria-hidden="true"></span>
+                                                <p><a href="mailto:info@example.com">info@example.com</a></p>
+                                            </div>
+                                        </address>
+                                    </div>
+                                    <div class="contact-middle col-md-12">
+                                        <h4>Write to Us</h4>
+                                        <form action="#" method="post">
+                                            <div class="form-fields-agileinfo">
+                                                <p>Name</p>
+                                                <input type="text" name="your name" placeholder=" " required="" style="max-width: 600px;">
+                                            </div>
+                                            <div class="form-fields-agileinfo">
+                                                <p>Email</p>
+                                                <input type="email" name="your email" placeholder=" " required="" style="max-width: 600px;">
+                                            </div>
+                                            <div class="form-fields-agileinfo">
+                                                <p>Comments</p>
+                                                <textarea name="your message" placeholder=" " required="" style="max-width: 600px;"></textarea>
+                                            </div>
+                                            <input type="submit" value="Send Message">
+                                        </form>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+    </div>
+</div>
+
+
+
+
+
+
+

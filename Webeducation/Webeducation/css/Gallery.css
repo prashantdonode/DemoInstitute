@@ -1,0 +1,33 @@
+﻿.breadcumb-area .bradcumbContent {
+    width: 50%;
+    height: 110px;
+    background: #61ba6d;
+    background: -webkit-linear-gradient(to right, #f73b11, #f99b43);
+    background:linear-gradient(to right, #f73b11, #f99b43);
+    position: absolute;
+    bottom: -60px;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    left: 50%;
+    z-index: 30;
+}
+.breadcumb-area {
+    position: relative;
+    z-index: 10;
+    width: 100%;
+    height: 200px;
+}
+.bg-img {
+    background-image: url('../images/breadcumb.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.breadcumb-area .bradcumbContent h2 {
+    text-align: center;
+    line-height: 110px;
+    font-size: 36px;
+    color: #ffffff;
+}
+
+ 

@@ -1,0 +1,234 @@
+﻿
+.breadcumb-area .bradcumbContent {
+    width: 50%;
+    height: 110px;
+    background: #61ba6d;
+    background: -webkit-linear-gradient(to right, #f73b11, #f99b43);
+    background: linear-gradient(to right, #f73b11, #f99b43);
+    position: absolute;
+    bottom: -60px;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    left: 50%;
+    z-index: 30;
+}
+.breadcumb-area {
+    position: relative;
+    z-index: 10;
+    width: 100%;
+    height: 200px;
+}
+.bg-img {
+    background-image: url('../images/breadcumb.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.breadcumb-area .bradcumbContent h2 {
+    text-align: center;
+    line-height: 110px;
+    font-size: 36px;
+    color: #ffffff;
+}
+
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+.banner_bottom_left h4 {
+    font-size: 1.5em;
+    color: #3c3c3c;
+    letter-spacing: 1px;
+    position: relative;
+    font-weight: 600;
+    line-height: 1.6em;
+    margin-bottom: 1em;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+.banner_bottom_left p {
+    margin-bottom: 1em;
+    letter-spacing: 1px;
+    font-size: 15px;
+    line-height: 1.8em;
+    color: #777;
+}
+.col-lg-6 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+.slide-bg {
+    background-image: url('../images/breadcumb.jpg');
+    background-size: cover;
+    min-height: 40vw;
+}
+.text-white {
+    color: #fff !important;
+}
+.text-uppercase {
+    text-transform: uppercase !important;
+}
+h5.agile-title {
+    color: #fff;
+    font-size: 2.7em;
+    font-weight: 600;
+    letter-spacing: 2px;
+    word-spacing: 4px;
+    max-width: 750px;
+}
+.slide-bg p {
+    max-width: 750px;
+    letter-spacing: 1px;
+}
+.text-light {
+    color: #f8f9fa !important;
+}
+.sec-h{
+    margin-bottom:150px;
+}
+
+
+.team {
+    padding: 5em 0;
+}
+.wthree_head_section {
+    margin-bottom: 5em;
+}
+.w3l_header {
+    text-align: center;
+    font-size: 3em;
+    color: #2c363e;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.37);
+}
+.wthree_head_section p {
+    font-size: 15px;
+    text-align: center;
+    margin: 20px auto;
+    width: 60%;
+    color: #5e5e5e;
+    line-height: 1.8em;
+    letter-spacing: 1px;
+}
+.agile_team_grid {
+    text-align: center;
+}
+.view, .view .mask, .view .content {
+    width: 255px;
+    height: 298px;
+}
+.view {
+    margin: 0;
+    float: none;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+}
+.view-sixth img {
+    -webkit-transition: all 0.4s ease-in-out 0.5s;
+    -moz-transition: all 0.4s ease-in-out 0.5s;
+    -o-transition: all 0.4s ease-in-out 0.5s;
+    -ms-transition: all 0.4s ease-in-out 0.5s;
+    transition: all 0.4s ease-in-out 0.5s;
+    width: 100%;
+}
+.view img {
+    display: block;
+    position: relative;
+}
+.view-sixth .mask {
+    background-color: rgba(2, 158, 183, 0.84);
+    -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    opacity: 0;
+    -webkit-transition: all 0.3s ease-in 0.4s;
+    -moz-transition: all 0.3s ease-in 0.4s;
+    -o-transition: all 0.3s ease-in 0.4s;
+    -ms-transition: all 0.3s ease-in 0.4s;
+    transition: all 0.3s ease-in 0.4s;
+    padding: 8em 0 0;
+}
+.view .mask, .view .content {
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+}
+.view, .view .mask, .view .content {
+    width: 255px;
+    height: 298px;
+}
+.w3l-social {
+    text-align: center;
+    margin-top: 1.5em;
+}
+.w3l-social ul {
+    padding: 0;
+    margin: 0;
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.w3l-social ul li {
+    display: inline-block;
+}
+.w3l-social ul li a {
+    margin: 0 1em;
+    font-size: 16px;
+    color: #ffffff;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    -ms-border-radius: 50%;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+}
+.agile_team_grid h4 {
+    font-size: 1.5em;
+    color: #f73b11;
+    margin: 1em 0 .5em;
+}
+.agile_team_grid p {
+    color: #777;
+    font-size: 15px;
+    letter-spacing: 1.5px;
+    font-weight: 600;
+}
+.view-sixth:hover .mask:hover {
+    background-color: rgba(2, 158, 183, 0.84);
+    -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    opacity: 0;
+    -webkit-transition: all 0.3s ease-in 0.4s;
+    -moz-transition: all 0.3s ease-in 0.4s;
+    -o-transition: all 0.3s ease-in 0.4s;
+    -ms-transition: all 0.3s ease-in 0.4s;
+    transition: all 0.3s ease-in 0.4s;
+    padding: 8em 0 0;
+}
+.agile_team_grid:hover .view-sixth img, .view-sixth:hover img {
+    -webkit-transition-delay: 0s;
+    -moz-transition-delay: 0s;
+    -o-transition-delay: 0s;
+    -ms-transition-delay: 0s;
+    transition-delay: 0s;
+}
+
+@media screen and (max-width: 430px){
+   .agile_team_grid {
+    margin-left: 20px;
+    }
+   col-lg-6 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+}
