@@ -1,41 +1,63 @@
-﻿body {
-    color: #fff;
-    background-image: url('../../images/bible-book-book-bindings-1112048.jpg');
-    background-size:cover;
+﻿body{
+        background: linear-gradient(to right, #f73b11, #f99b43);
+
 }
- .sec-common label{
+.sec-haed1{
+  margin: 20px 5px;
+    padding: 20px;
+    background-color: white;
+}
+.sec-haed2{
+  padding: 20px;
+    background-color: lightgray;
+}
+  label{
             margin:15px;
+           
             width:140px;
         }
         .sec-common input{
             margin:0px 15px;
             width:200px;
-            background-color:transparent;
+            border-top: solid; 
         }
-        h3{
+        .sec_head{
+
+          margin-top:40px;
+          font-style: italic;
+          font-family: -webkit-pictograph;
+         color: #000;
+
+margin-bottom: 10px;
+        }
+       .sec_head h3{
             text-align:center;
-            margin-bottom:20px;
+            padding:10px;
+        
+            
         }
         .sec_stud option{
             color:black;
         }
         .sec_stud{
             margin-left:15px;
-            background-color:transparent;
+             border-top: solid;
         }
         .sec-rcommon input{
+            border-top: solid;
             margin:15px;
+           
         }
+       
         .sec-foot input{
+           
             margin:15px;
-            background-color:#000;
+            
         }
-h3::after {
-    content: "";
-    display: block;
-    width: 60px;
-    max-width: 70%;
-    border-bottom: 0.2em solid #ff6a00;
-    margin: 5px auto 0;
-}
 
+        /*.roww{
+            border: 1px solid rgb(0,0,0);
+            background-color:gray;
+            box-shadow: 2px 2px 2px black;
+           
+        }*/
